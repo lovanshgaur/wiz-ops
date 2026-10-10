@@ -297,27 +297,38 @@ prevBtn.addEventListener("click", () => {
 nextBtn.addEventListener("click", () => {
   if (n === data.length - 1) {
     runProfile(0);
-    n = data.length - 1;
+    n = 0;
   } else {
     runProfile(n + 1);
     n = n + 1;
   }
+  console.log(n)
 });
 
-function swap() {
+function swap(n) {
   const swapTimeline = gsap.timeline();
-  swapTimeline.from(".hero-background", {
-    clipPath: "inset(0 0% 0 100%)",
-    opacity: 1,
-    duration: 1,
-    transformOrigin: "right center",
-    ease: "sine.out"
-  });
+  if (n % 2) {
+    swapTimeline.from(".hero-background", {
+      clipPath: "inset(100% 0% 0 100%)",
+      opacity: 1,
+      duration: 1,
+      transformOrigin: "right center",
+      ease: "sine.out"
+    });
+  } else {
+    swapTimeline.from(".hero-background", {
+      clipPath: "inset(0% 100% 100% 0%)",
+      opacity: 1,
+      duration: 1,
+      transformOrigin: "right center",
+      ease: "sine.out"
+    });
+  }
   swapTimeline.from(
-    ".hero-profile",
+    ".profile-backdrop",
     {
-      x: 500,
-      scale: 0,
+      //   x: 500,
+      scale: 3,
       opacity: 0,
       duration: 1,
       ease: "circ.out"
@@ -325,7 +336,37 @@ function swap() {
     "-=0.5"
   );
   swapTimeline.from(
-    ".hero-text",
+    ".profile-image",
+    {
+      scale: 0,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out"
+    },
+    "-=0.2"
+  );
+  swapTimeline.from(
+    ".profile-text",
+    {
+      y: -400,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out"
+    },
+    "-=0.5"
+  );
+  swapTimeline.from(
+    ".profile-tag",
+    {
+      x: -400,
+      opacity: 0,
+      duration: 1,
+      ease: "bounce.out"
+    },
+    "-=1"
+  );
+  swapTimeline.from(
+    ".hero-text-child",
     {
       y: 500,
       opacity: 0,
@@ -333,21 +374,38 @@ function swap() {
       stagger: 0.5,
       ease: "power3.out"
     },
-    "-=0.9"
+    "-=2.5"
   );
 }
+
 function runProfile(n) {
   let curr = data[n];
-  console.log(curr);
-  document.getElementById("hero-content").innerHTML = `
-  <h1 class="hero-text">${curr.commonName}</h1>
-  <h4 class="hero-text">${curr.name}</h4>
-  `;
   document.querySelector(".hero-background").style.backgroundImage =
     `url("${curr.story.image}")`;
-  document.getElementById("hero-profile").style.backgroundImage =
-    `url(${curr.image})`;
-  swap();
-  console.log(n);
+  let heroText = document.querySelector(".hero-text");
+  heroText.innerHTML = `
+    <div class="category hero-text-child">${curr.id} - ${curr.category}</div>
+    <h1 class="name hero-text-child">${curr.name.split(" ")[0]} <em>${curr.name.split(" ")[1]}</em></h1>
+    <p class="hero-text-child">${curr.description}</p>
+    <div class="cta hero-text-child">
+        <div class="cta-btn">
+            Explore
+            <span>↘</span>
+        </div>
+    </div>
+  `;
+  let heroProfile = document.querySelector(".hero-profile");
+  heroProfile.innerHTML = `
+  <div class="profile-backdrop"></div>
+    <div class="profile-image">
+        <img src="${curr.image}" alt="">
+    </div>
+    <div class="profile-text">
+        <h3>${curr.commonName}</h3>
+        <h5>${curr.scientificName}</h5>
+    </div>
+    <div class="profile-tag">Species/00${curr.id}</div>
+  `;
+  swap(n);
 }
-runProfile(0)
+runProfile(0);

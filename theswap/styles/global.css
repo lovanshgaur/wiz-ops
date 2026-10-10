@@ -11,7 +11,9 @@
 html,
 body {
   height: 100%;
-  font-family: var(--text);
+  font-family: var(--sans);
+  background-color: var(--paper);
+  color: var(--color);
   line-height: 1.6;
   scroll-behavior: smooth;
 }
