@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Vault</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <main>
+        <section id="projects" class="projects">
+            <div class="project-image">
+                <img class="preview-image"
+                    src="https://images.unsplash.com/photo-1555991910-65b4c0139fdf?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                    alt="">
+            </div>
+            <div class="section-header">
+                <div class="section-heading">
+                    <h3>Recent Projects</h3>
+                </div>
+                <div class="section-bottom">
+                    <div class="filters-wrapper">
+                        <div class="tag">All</div>
+                        <div class="tag">Landing Page</div>
+                        <div class="tag">Web Apps</div>
+                        <div class="tag">UI/UX</div>
+                    </div>
+                    <span class="project-count ">Total Projects: 006</span>
+                </div>
+            </div>
+            <div class="section-main">
+                <div class="projects-section">
+                    <div class="projects-header project-row">
+
+                        <div class="project-col">
+                            <div class="index">No.</div>
+                            <div class="heading">Project</div>
+                        </div>
+                        <div class="category">Category</div>
+                        <div class="year">Year</div>
+                    </div>
+                    <div class="projects-wrapper" id="projects-wrapper"></div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>

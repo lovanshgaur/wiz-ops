@@ -1,0 +1,113 @@
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--color);
+}
+
+/* ========================== Section Header ========================== */
+.section-header {
+  width: 85%;
+  margin: auto;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border);
+}
+.section-heading {
+  padding-bottom: 2rem;
+}
+.section-heading h3 {
+  font-size: 3rem;
+}
+.section-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.filters-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.tag {
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+}
+.tag:hover,
+.tag-active {
+  background: var(--color);
+  color: var(--background);
+}
+.project-count {
+  text-transform: capitalize;
+  font-family: monospace;
+  color: var(--muted);
+}
+
+/* ========================== Section Main ========================== */
+.section-main {
+  display: flex;
+  width: 85%;
+  margin: auto;
+}
+.projects-section {
+  width: 100%;
+}
+.projects-header {
+  text-transform: capitalize;
+}
+.project-row {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  position: relative;
+}
+.project-image {
+  position: fixed;
+  width: 280px;
+  height: 360px;
+  pointer-events: none;
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.9);
+  transition:
+    opacity 0.25s ease,
+    transform 0.15s ease-out;
+  z-index: 100;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.project-image.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-col {
+  flex: 2;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.category,
+.year {
+  flex: 1;
+}
+.project-row .title {
+  color: var(--color);
+  font-family: var(--display);
+  font-size: 1.25rem;
+  line-height: 2;
+}
