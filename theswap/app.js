@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 let n = 0;
 let isAnimating = false;
 

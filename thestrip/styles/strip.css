@@ -1,62 +1,84 @@
-.strip-section{
-    width: 90%;
-    margin: auto;
+.strip-section {
+  width: 90%;
+  margin: auto;
 }
-.section-header{
-    padding: 1rem 2rem;
-    height: 20vh;
-    margin-top: 5rem;
+.section-header {
+  padding: 1rem 2rem;
+  height: 20vh;
+  margin-top: 5rem;
 }
-.section-header h4{
-    color: var(--accent);
+.section-header h4 {
+  color: var(--accent);
 }
-.section-header h2{
-    font-size: 3.5rem;
-    width: 55%;
-    text-transform: none;
-    line-height: 1.2;
-    font-weight: 700;
+.section-header h2 {
+  font-size: 3.5rem;
+  width: 55%;
+  text-transform: none;
+  line-height: 1.2;
+  font-weight: 700;
 }
-.section-main{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 1rem 3rem;
-    flex: 1;
-    margin-top: 10vh;
+.section-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  flex: 1;
+  margin-top: 15vh;
 }
-.strip-profile{
-    width: 50%;
-    flex: 1;
-    position: sticky;
-    top: 20vh;
+
+.strips-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
 }
-.strips-wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    flex: 1;
+
+.card-wrapper {
+  height: 70vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
-.strip-profile{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.strips-wrapper .card {
+  width: 520px;
+  height: 320px;
+  border-radius: 1rem;
+  background-color: var(--surface);
 }
-.card-wrapper{
-    height: 70vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+.strip-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  flex: 1;
+  position: sticky;
+  top: 15vh;
 }
-.card{
-    width: 520px;
-    height: 320px;
-    border-radius: 1rem;
-    background-color: var(--surface);
+.strip-profile-wrapper {
+  height: 70vh;
+  width: 520px;
+  overflow: hidden;
+  border-radius: 1rem;
 }
-.strip-profile .card{
-    height: 70vh;
-    background-color: antiquewhite;
+.strip-profile-wrapper .profile-card {
+  width: 100%;
+  height: 90%;
+  background-color: var(--surface);
+}
+.profile-card img {
+  height: 100%;
+  width: auto;
+}
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  transition: all 0.5s ease-in-out;
+}
+#progress {
+  width: 25%;
+  height: 100%;
+  background-color: aliceblue;
 }
