@@ -1,57 +1,115 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the strip</title>
+
+    <title>The Strip — Our Process</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main>
         <section class="strip-section" id="strip">
+
             <div class="section-header">
                 <h4>Our Process</h4>
                 <h2>From initial concept to production scale.</h2>
             </div>
+
             <div class="section-main">
+
                 <div class="strips-wrapper">
+
                     <div class="card-wrapper">
-                        <div class="card" data-id="1"></div>
+                        <div class="card" data-id="1">
+                            <span class="card-number">01 / DISCOVER</span>
+                            <h3>Understand before creating.</h3>
+                            <p>
+                                Every good product begins with the right questions.
+                                We explore the problem, understand the audience,
+                                and find the opportunity worth pursuing.
+                            </p>
+                        </div>
                     </div>
+
                     <div class="card-wrapper">
-                        <div class="card" data-id="2"></div>
+                        <div class="card" data-id="2">
+                            <span class="card-number">02 / DEFINE</span>
+                            <h3>Give the idea a direction.</h3>
+                            <p>
+                                We turn research into a clear vision, defining
+                                the strategy, structure, and experience that
+                                will guide everything that follows.
+                            </p>
+                        </div>
                     </div>
+
                     <div class="card-wrapper">
-                        <div class="card" data-id="3"></div>
+                        <div class="card" data-id="3">
+                            <span class="card-number">03 / DESIGN</span>
+                            <h3>Make the invisible tangible.</h3>
+                            <p>
+                                Ideas take shape through thoughtful interfaces,
+                                purposeful interactions, and visual systems
+                                built around real human behavior.
+                            </p>
+                        </div>
                     </div>
+
                     <div class="card-wrapper">
-                        <div class="card" data-id="4"></div>
+                        <div class="card" data-id="4">
+                            <span class="card-number">04 / DELIVER</span>
+                            <h3>Build it for the real world.</h3>
+                            <p>
+                                We bring everything together into a
+                                production-ready experience, tested, refined,
+                                and ready to grow beyond the original idea.
+                            </p>
+                        </div>
                     </div>
+
                 </div>
+
                 <div class="strip-profile">
                     <div class="strip-profile-wrapper">
+
                         <div class="profile-card">
-                            <img class="profile-image"
+                            <img
+                                class="profile-image"
                                 src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=1200&auto=format&fit=crop&q=80"
-                                alt="">
+                                alt="Digital product development workspace"
+                            >
+
+                            <div class="profile-overlay">
+                                <span>THE WAY WE WORK</span>
+                                <h3>Good things take<br>great thinking.</h3>
+                                <p>From the first question to the final detail.</p>
+                            </div>
                         </div>
+
                         <div class="progress-bar">
                             <div id="progress"></div>
                         </div>
+
                     </div>
                 </div>
+
             </div>
         </section>
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
     <script src="app.js"></script>
 </body>
-
 </html>
