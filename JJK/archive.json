@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "name": "Megumi Fushiguro",
+      "image": "./img/megumi.png",
+      "color": "#1f2937",
+      "tagline": "Quiet. Tactical. Dangerous.",
+      "description": "Megumi Fushiguro fights with restraint, not hesitation. He believes strength should be used selectively, even if that belief costs him. Calm under pressure and ruthless when necessary, he approaches every battle like a calculated risk."
+    },
+    {
+      "name": "Toge Inumaki",
+      "image": "./img/inumaki.png",
+      "color": "#94a3b8",
+      "tagline": "Words can kill.",
+      "description": "Toge Inumaki carries a power that forces him into silence. Every word he speaks can harm or kill, making restraint his greatest discipline. Beneath his quiet demeanor lies deep loyalty and unwavering resolve."
+    },
+    {
+      "name": "Kento Nanami",
+      "image": "./img/nanami.png",
+      "color": "#eab308",
+      "tagline": "Work ends at overtime.",
+      "description": "Kento Nanami treats sorcery like a profession, not a calling. He values balance, structure, and responsibility in a world built on chaos. Beneath his calm exterior is a man who despises wasted effort."
+    },
+    {
+      "name": "Toji Fushiguro",
+      "image": "./img/toji.png",
+      "color": "#475569",
+      "tagline": "Built to kill sorcerers.",
+      "description": "Toji Fushiguro stands outside the rules of the jujutsu world. With no cursed energy and no allegiance, he relies purely on instinct, experience, and overwhelming physical dominance."
+    },
+    {
+      "name": "Suguru Geto",
+      "image": "./img/geto.png",
+      "color": "#22c55e",
+      "tagline": "A world worth cleansing.",
+      "description": "Suguru Geto is a man undone by conviction. Once a protector, he became a revolutionary, convinced that humanity itself was the problem. Charismatic and composed, his ideals mask an extreme worldview."
+    },
+    {
+      "name": "Yuji Itadori",
+      "image": "./img/itadori.png",
+      "color": "#ef4444",
+      "tagline": "I choose how I die.",
+      "description": "Yuji Itadori steps into a cursed world with compassion intact. Burdened with unimaginable power, he refuses to surrender his humanity. Every fight is personal, every loss deeply felt."
+    },
+    {
+      "name": "Satoru Gojo",
+      "image": "./img/satoru.png",
+      "color": "#38bdf8",
+      "tagline": "The strongest.",
+      "description": "Satoru Gojo exists at the peak of power, unmatched and unapologetic. His confidence borders on arrogance because reality has never challenged it. Beneath the playful attitude lies a calculated protector."
+    },
+    {
+      "name": "Yuta Okkotsu",
+      "image": "./img/yuta.png",
+      "color": "#a855f7",
+      "tagline": "Love is the strongest curse.",
+      "description": "Yuta Okkotsu carries overwhelming power born from grief and love. Gentle by nature, he struggles with the fear of hurting those around him. When forced to fight, his resolve is terrifyingly absolute."
+    },
+    {
+      "name": "Kinji Hakari",
+      "image": "./img/hakari.png",
+      "color": "#f97316",
+      "tagline": "All or nothing.",
+      "description": "Kinji Hakari thrives on chaos, risk, and momentum. He treats combat like a gamble and trusts his instincts more than rules. Loud, unpredictable, and dangerously confident."
+    },
+    {
+      "name": "Mahito",
+      "image": "./img/mahito.png",
+      "color": "#14b8a6",
+      "tagline": "The soul has a shape.",
+      "description": "Mahito views humanity as an experiment. Curious, cruel, and disturbingly playful, he reshapes bodies and souls without remorse. To him, suffering is education and death is discovery."
+    },
+    {
+      "name": "Aoi Todo",
+      "image": "./img/todo.png",
+      "color": "#facc15",
+      "tagline": "Strength recognizes strength.",
+      "description": "Aoi Todo is overwhelming in both personality and power. Loud, confident, and unapologetically himself, he lives for combat and connection. Beneath the absurdity lies a sharp tactical mind."
+    }
+  ]
+}
